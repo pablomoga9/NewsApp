@@ -1,0 +1,18 @@
+@import '../utils/variables.scss';
+
+.nav-bar{
+    display: flex;
+    justify-content:space-evenly;
+    
+    background: $navBackground;
+    text-decoration: none;
+    a{
+        background: $navButtons;
+        text-decoration: none;
+        color:white;
+        border-radius: 20px;
+        padding: 15px;
+    }
+   
+}
+
