@@ -1,5 +1,36 @@
-// @import '../utils/variables.scss';
+.bodyContainer{
+    min-height: 75vh;
+    .insertName{
+        background: rgba(0, 155, 202, 0.077);
+        padding: 40px;
+        width: 70%;
+        height: 400px;
+        margin:auto;
+        border: solid 2px;
+        border-color:rgba(91, 210, 170, 0.367);
+        display: flex;
+        display: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeInput{
+        background: none;
+        border: solid 2px;
+        border-radius: 20px;
+        border-color: rgba(0, 131, 192, 0.462);
+        padding: 10px;
+        outline: none;
+        margin: 0px 20px 0px 20px;
+    }
+    .homeLabel{
+        margin: 10px;
+    }
+}
 
-// *{
-//     background: $bodyBackground;
-// }
+@media screen and (max-width: 480px) {
+    .insertName{
+        width: 100%;
+        margin: none;
+        flex-direction: column;
+    }
+}

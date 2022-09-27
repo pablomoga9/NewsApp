@@ -34,10 +34,13 @@ class Home extends Component {
     this.setState({username});
   }
   render() {
-    return <div>
+    return <div className="bodyContainer">
       <h3>{this.props.message}</h3>
-      <input type="text" id="usernameInput" palceholder="Usuario" ref={this.username} onChange={this.handleChange}/>
+      <div className="insertName">
+      <label className="homeLabel" htmlFor="homeComment">Ingresa tu nombre:</label>
+      <input type="text" className="homeInput" palceholder="Usuario" ref={this.username} onChange={this.handleChange}/>
       {this.state.username ? <Button variant="contained" onClick={this.sendName}>Login</Button> : ""}
+      </div>
     </div>
   }
 }

@@ -20,7 +20,7 @@ class ListNews extends Component {
 
   async componentDidMount(){
     
-    const res = await fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Culture&api-key=MFwLVXOLrZa2uC6vG7qIiFNleZNvVZtw');
+    const res = await fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=Culture&api-key=${process.env.REACT_APP_APIKEY}`);
     const data = await res.json();
     this.setState({
       newsList:data.response.docs

@@ -16,7 +16,7 @@ class Nav extends Component {
 
 
         <userContext.Consumer>
-          {({logout,user})=>user?<span>Usuario: {user} <Button variant="contained" size="small" onClick={logout}>Logout</Button></span>:""
+          {({logout,user})=>user?<span className="userNav">Usuario: {user} <Button variant="contained" size="small" onClick={logout}>Logout</Button></span>:""
           }
         </userContext.Consumer>
       </nav>

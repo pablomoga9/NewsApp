@@ -1,0 +1,28 @@
+.formContainer{
+    min-height: 77vh;
+    form{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background: rgba(4, 146, 194, 0.177);
+        padding: 40px;
+        flex-direction: row;
+        .formInput{
+            background: none;
+            border: solid 2px;
+            border-radius: 20px;
+            border-color: rgba(0, 131, 192, 0.462);
+            padding: 10px;
+            outline: none;
+            margin: 20px 20px 20px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .formContainer{
+        form{
+            flex-direction: column;
+        }
+    }
+}

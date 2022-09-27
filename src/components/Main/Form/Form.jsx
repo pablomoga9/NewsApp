@@ -25,14 +25,16 @@ class Form extends Component {
   
   render() {
    
-    return <form onSubmit={this.handleForm}>
-      <input type="text" name="title" placeholder="Añade un titular" />
-      <input type="text" name="body" placeholder="Añade un cuerpo a la noticia" />
+    return <div className="formContainer">
+    <form onSubmit={this.handleForm}>
+      <input className="formInput" type="text" name="title" placeholder="Añade un titular" />
+      <input className="formInput" type="text" name="body" placeholder="Añade un cuerpo a la noticia" />
       <Button variant="contained" color="success" type="submit">
         Publicar
   
       </Button>
-    </form>;
+    </form>
+    </div>
   }
 }
 

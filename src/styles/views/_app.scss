@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
 @import '../utils/variables.scss';
 
 .App {
     text-align: center;
-    background: $bodyBackground;
+    font-family: $font;
   }
   
    

@@ -7,19 +7,25 @@ class Card extends Component {
 
     if(list){
       return(
+        
         <article className="card-box">
           <a>{list.title}</a>
           <p>{list.body}</p>
-          <button onClick={this.props.delete}>Eliminar</button>
+          <button className="cardBtn" onClick={this.props.delete}>Eliminar</button>
         </article>
+        
       )
     }
     else{
-      return <article className="card-box">
+      return (
+      
+      <article className="card-box">
       <a href={web_url}>{abstract}</a>
       <p>{lead_paragraph}</p>
-      <button onClick={this.props.delete}>Eliminar</button>
+      <button className="cardBtn" onClick={this.props.delete}>Eliminar</button>
       </article>
+     
+      )
     }
 
    

@@ -3,6 +3,8 @@
 .list{
     display: flex;
     flex-wrap: wrap;
-
+    min-height: 75vh;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #c9f9ff, #aaf0fd, #87e7fc, #5dddfd, #00d3ff);
 }
 
