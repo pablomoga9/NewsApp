@@ -19,7 +19,7 @@ class Form extends Component {
       body: event.target.body.value
     }
     getInfo(data)
-    // const navigate = useNavigate();
+  
    
     }
   
